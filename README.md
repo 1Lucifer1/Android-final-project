@@ -1,4 +1,5 @@
 # Android大作业
+2020NJUSE安卓暑课的大作业项目——实现类似抖音的滑动播放视频
 
 课程指南：https://bytedance.feishu.cn/docs/doccnNfjXZRo02jL7zqZatB4osc
 
