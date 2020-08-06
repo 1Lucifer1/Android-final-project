@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/card"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/h_back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/h_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/h_back"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="17sp"
+                android:textColor="#FFF"
+                android:text="张三"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/component_self_item"
+        android:id="@+id/component_self_item_1"
+        android:layout_below="@id/card"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <include layout="@layout/component_self_item"
+        android:layout_marginTop="10dp"
+        android:id="@+id/component_self_item_2"
+        android:layout_below="@id/component_self_item_1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <include layout="@layout/component_self_item"
+        android:id="@+id/component_self_item_3"
+        android:layout_below="@id/component_self_item_2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <include layout="@layout/component_home"/>
+
+</RelativeLayout>
+

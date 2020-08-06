@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/tv_item_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/tv_view_holder_instance"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="monospace"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="18sp"
+        tools:text="ViewHolder instance: 7777777777777777777777" />
+
+</FrameLayout>
